@@ -8,10 +8,10 @@ User=workoutapp
 Group=workoutapp
 
 # Set the working directory to the project root
-WorkingDirectory=/srv/workout-timer # <-- Replace if your path differs
+WorkingDirectory=/srv/workout-timer
 
 # Command to execute Gunicorn
-ExecStart=/srv/workout-timer/venv/bin/gunicorn -c /srv/workout-timer/gunicorn.conf.py app:app # <-- Replace path if differs
+ExecStart=/srv/workout-timer/venv/bin/gunicorn -c /srv/workout-timer/gunicorn.conf.py app:app
 
 # Restart policy
 Restart=on-failure
