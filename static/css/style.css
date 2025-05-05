@@ -1,0 +1,214 @@
+/* Basic Reset & Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* Prevent scrollbars */
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    -webkit-tap-highlight-color: transparent; /* Disable gray tap highlight on iOS/some Android */
+     -webkit-touch-callout: none; /* Disable callout on long press */
+     -webkit-user-select: none; /* Disable text selection */
+     -khtml-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+    line-height: 1.1;
+    background-color: #E65100; /* Set a base body background */
+}
+
+/* Provide fallback message if JS is disabled */
+noscript p {
+     background-color: #fff;
+     color: #b71c1c; /* Dark Red */
+     border: 2px solid #b71c1c;
+     border-radius: 5px;
+     margin: 20px;
+}
+
+
+/* --- Default (Portrait) Styles --- */
+
+#timer-container, #finished-screen {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Use 100vh for viewport height if needed */
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 3vw;
+    background-color: #E65100; /* Default exercise color */
+    color: #FFFFFF;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+#timer-container.resting {
+    background-color: #1565C0; /* Blue */
+}
+
+#total-time-section {
+    font-size: clamp(1.5rem, 5vmin, 2.5rem);
+    opacity: 0.8;
+    flex-shrink: 0;
+}
+
+#exercise-name-section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 0; /* Helps prevent flex item overflow */
+    padding: 1vh 0;
+}
+
+#exercise-name {
+    font-size: clamp(2.5rem, 10vmin, 6rem);
+    font-weight: bold;
+    margin-bottom: 5px;
+    line-height: 1.1;
+    overflow-wrap: break-word; /* Break long words */
+     word-break: break-word; /* Ensure wrapping */
+    max-width: 95%;
+}
+
+#next-exercise {
+    font-size: clamp(1.3rem, 5vmin, 2.2rem);
+    opacity: 0.7;
+    max-width: 95%;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+#current-timer-section {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+#current-timer {
+    font-size: clamp(10rem, 35vmin, 22rem);
+    font-weight: bold;
+    line-height: 1;
+    font-variant-numeric: tabular-nums; /* Keep numbers aligned */
+    margin-bottom: 1vh;
+    width: 100%;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 1vh;
+    flex-shrink: 0;
+    gap: 15px;
+}
+
+.controls button {
+    background: rgba(0, 0, 0, 0.15);
+    border: none;
+    color: #FFFFFF;
+    border-radius: 50%;
+    width: clamp(35px, 8vmin, 50px);
+    height: clamp(35px, 8vmin, 50px);
+    font-size: clamp(0.8rem, 2.5vmin, 1.2rem);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease;
+    /* Improve touch target size visually without making bg huge */
+    /* padding: 5px; */ /* Consider adding padding if touch is hard */
+}
+
+/* Visual feedback on button press */
+.controls button:active {
+    background: rgba(0, 0, 0, 0.4);
+    transform: scale(0.95); /* Slight shrink effect */
+}
+
+
+#play-pause-btn {
+    width: clamp(45px, 10vmin, 65px);
+    height: clamp(45px, 10vmin, 65px);
+    font-size: clamp(1rem, 3.5vmin, 1.7rem);
+    background: rgba(0, 0, 0, 0.25);
+}
+
+
+#finished-screen {
+    justify-content: center;
+    background-color: #2E7D32; /* Dark Green */
+}
+
+#finished-screen h1 {
+    font-size: clamp(2.5rem, 10vmin, 6rem);
+    margin-bottom: 20px;
+}
+
+.button-link {
+    padding: 12px 25px;
+    font-size: clamp(1.1rem, 4.5vmin, 1.6rem);
+    display: inline-block;
+    background-color: #ffffff;
+    color: #333333;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.1s ease;
+}
+.button-link:hover {
+    background-color: #e0e0e0;
+}
+.button-link:active {
+     transform: scale(0.97); /* Slight shrink effect on click */
+}
+
+
+/* --- Landscape Orientation Styles --- */
+@media (orientation: landscape) {
+    #timer-container, #finished-screen {
+        padding: 1vh 4vw; /* Reduced vertical padding */
+    }
+
+    #total-time-section {
+         font-size: clamp(1.2rem, 4vmin, 2rem);
+    }
+
+     #exercise-name-section {
+         padding: 0.5vh 0; /* Reduced vertical padding */
+     }
+
+    #exercise-name {
+        font-size: clamp(2rem, 8vmin, 5rem); /* Reduced */
+        margin-bottom: 2px;
+    }
+
+    #next-exercise {
+        font-size: clamp(1rem, 4vmin, 1.8rem); /* Reduced */
+    }
+
+    #current-timer {
+        font-size: clamp(6rem, 30vmin, 16rem); /* Reduced */
+        line-height: 1;
+        margin-bottom: 0; /* Remove bottom margin */
+    }
+
+     .controls {
+          padding-bottom: 0.5vh; /* Reduced bottom padding */
+     }
+
+    #finished-screen h1 {
+        font-size: clamp(2rem, 8vmin, 5rem); /* Reduced */
+    }
+
+     .button-link {
+        font-size: clamp(1rem, 4vmin, 1.5rem); /* Reduced */
+    }
+}

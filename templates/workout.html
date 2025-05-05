@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- Prevent pinch zoom, essential for app-like feel -->
+    <title>Workout Timer</title>
+    <!-- Consider hosting Font Awesome locally or using SVGs for full offline/production use -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Add favicon links here -->
+    <!-- <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}"> -->
+    <!-- <link rel="apple-touch-icon" href="{{ url_for('static', filename='apple-touch-icon.png') }}"> -->
+    <!-- <meta name="theme-color" content="#E65100"> <!-- Theme color for browser UI -->
+</head>
+<body>
+    <noscript>
+        <p style="padding: 20px; text-align: center; font-size: 1.2em; color: red;">
+            This application requires JavaScript to function. Please enable JavaScript in your browser settings.
+        </p>
+    </noscript>
+
+    <audio id="countdown-sound" src="{{ url_for('static', filename='audio/countdown_timer.mp3') }}" preload="auto"></audio>
+
+    <div id="timer-container">
+        <div id="total-time-section">
+            REMAINING: <span id="total-time">--:--</span>
+        </div>
+
+        <div id="exercise-name-section">
+             <h1 id="exercise-name">Loading Routine...</h1>
+             <p id="next-exercise">Next: --</p>
+        </div>
+
+        <div id="current-timer-section">
+             <div id="current-timer">--</div>
+        </div>
+
+        <div class="controls">
+            <button id="prev-btn" aria-label="Previous Exercise" title="Previous Exercise"><i class="fas fa-backward-step" aria-hidden="true"></i></button>
+            <button id="play-pause-btn" aria-label="Play/Pause" title="Play/Pause"><i class="fas fa-play" aria-hidden="true"></i></button>
+            <button id="next-btn" aria-label="Next Exercise" title="Next Exercise"><i class="fas fa-forward-step" aria-hidden="true"></i></button>
+        </div>
+    </div>
+
+    <div id="finished-screen" style="display: none;">
+        <h1>Workout Complete!</h1>
+        <a href="{{ url_for('index') }}" class="button-link">Back to Routines</a>
+    </div>
+
+    <!-- Pass filename to JavaScript -->
+    <script>
+        // Use const for variables that shouldn't be reassigned
+        const routineFilename = "{{ routine_filename }}";
+    </script>
+    <script src="{{ url_for('static', filename='js/workout.js') }}"></script>
+</body>
+</html>

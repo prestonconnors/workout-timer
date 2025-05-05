@@ -1,0 +1,22 @@
+# Python virtual environment
+venv/
+*.pyc
+__pycache__/
+.env # If you ever add environment variables
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor directories
+.vscode/
+.idea/
+
+# Log files (if configured to write locally, though not recommended with systemd setup)
+*.log
+
+# SQLite database (if you were using one)
+# *.sqlite3
+
+# Dependencies (typically handled by requirements.txt)
+# instance/ # If using Flask instance folders

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Routines</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        /* Simple additional styles for index page */
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.5;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #555;
+            margin-bottom: 1.5em;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 2em;
+        }
+        li {
+            margin: 10px 0;
+            padding: 12px 15px;
+            background: #eee;
+            border-radius: 4px;
+            display: flex; /* Use flexbox for alignment */
+            justify-content: space-between; /* Space items apart */
+            align-items: center; /* Vertically center items */
+            flex-wrap: wrap; /* Allow wrapping on small screens if needed */
+            gap: 10px; /* Add gap between elements */
+        }
+        li .routine-link { /* More specific class */
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            flex-grow: 1; /* Allow link to take available space */
+            /* Ensure long names wrap reasonably */
+            word-break: break-word;
+             overflow-wrap: break-word;
+            margin-right: 10px; /* Space before the start button */
+        }
+         .start-button {
+             padding: 8px 15px;
+             background-color: #28a745;
+             color: white;
+             border: none;
+             border-radius: 4px;
+             text-decoration: none;
+             cursor: pointer;
+             white-space: nowrap; /* Prevent button text wrapping */
+             transition: background-color 0.2s ease;
+             flex-shrink: 0; /* Prevent button from shrinking */
+         }
+         .start-button:hover {
+             background-color: #218838;
+         }
+        hr {
+            margin: 30px 0;
+            border: 0;
+            border-top: 1px solid #ccc;
+        }
+        form {
+            margin-top: 20px;
+            text-align: center;
+        }
+         .form-input-group label { /* Style label for accessibility */
+            display: block;
+             margin-bottom: 8px;
+             font-weight: bold;
+         }
+        input[type="file"] {
+             display: block; /* Ensure it takes block space */
+             margin: 0 auto 15px auto; /* Center and add bottom margin */
+             max-width: 100%; /* Ensure it doesn't overflow */
+         }
+         input[type="submit"] {
+             padding: 10px 25px;
+             background-color: #007bff;
+             color: white;
+             border: none;
+             border-radius: 4px;
+             cursor: pointer;
+             font-size: 1rem;
+             transition: background-color 0.2s ease;
+         }
+         input[type="submit"]:hover {
+             background-color: #0056b3;
+         }
+         .no-routines {
+             text-align: center;
+             color: #777;
+             margin-top: 20px;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Workout Timer</h1>
+
+        <h2>Select a Routine</h2>
+        {% if routines %}
+            <ul>
+                {% for routine in routines %}
+                <li>
+                   <!-- Added class for easier selection/styling -->
+                   <span class="routine-link" title="{{ routine }}">
+                       {{ routine.replace('.yaml','').replace('.yml','').replace('_',' ').title() }}
+                   </span>
+                   <a href="{{ url_for('workout', filename=routine) }}" class="start-button">Start</a>
+                </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p class="no-routines">No routines found in the 'routines' folder.<br>Upload one below!</p>
+        {% endif %}
+
+        <hr>
+
+        <h2>Upload New Routine</h2>
+        <form action="{{ url_for('upload_routine') }}" method="post" enctype="multipart/form-data">
+             <div class="form-input-group">
+                 <label for="routine_file_input">Select YAML file:</label>
+                 <input type="file" id="routine_file_input" name="routine_file" accept=".yaml,.yml" required>
+             </div>
+             <input type="submit" value="Upload Routine">
+        </form>
+    </div>
+</body>
+</html>

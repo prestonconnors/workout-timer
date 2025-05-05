@@ -1,0 +1,259 @@
+- length: 45.0
+  name: warmup
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - warmup
+- instructions: Perform a burpee (chest to floor optional). Instead of a standard
+    jump up, jump and rotate 180 degrees mid-air. Land softly, ready for the next
+    burpee facing the new direction.
+  length: 57.0
+  name: Burpee 180 Turn Jump
+  reel_or_short: false
+  source: gemini
+  targeted groups:
+  - full body
+  - cardio
+  - core
+  type: compound
+- length: 57.0
+  name: Side Pushup # Right Side
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - core
+- length: 57.0
+  name: Forward / Back Lunge # Alternate Right Leg: Fwd Lunge, Back Lunge
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+- instructions: Perform 4 fast Mountain Climbers. Immediately follow with 4 Plank
+    Jacks. Repeat this 4+4 sequence continuously.
+  length: 57.0
+  name: Mountain Climber Jacks Combo
+  reel_or_short: false
+  source: gemini
+  targeted groups:
+  - core
+  - cardio
+  - upper body
+  - lower body
+  type: compound
+- length: 57.0
+  name: Prisoner Reverse Lunge # Switch legs halfway
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+- length: 57.0
+  name: Superman
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - core
+- instructions: Perform deep Skater Lunges, reaching the hand opposite the front leg
+    down to tap the floor outside the front foot on each side. Focus on depth and
+    control rather than pure speed.
+  length: 57.0
+  name: Skater Tap Downs
+  reel_or_short: false
+  source: gemini
+  targeted groups:
+  - lower body
+  - core
+  - cardio
+  type: compound
+- length: 57.0
+  name: Inchworm # Basic inchworm, no pushup
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+  - upper body
+- length: 57.0
+  name: Single Leg Jump Squat # Switch leg halfway
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+  - cardio
+- instructions: Start standing. Drop hands to floor, thrust feet back into plank.
+    Perform one pushup. Thrust feet back towards hands. Stand or jump up. (Similar
+    to burpee without chest-to-floor & emphasis on thrust).
+  length: 57.0
+  name: Squat Thrust with Pushup
+  reel_or_short: false
+  source: gemini
+  targeted groups:
+  - full body
+  - cardio
+  - core
+  type: compound
+- length: 57.0
+  name: Forward Lunge / Twist # Switch legs halfway
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+- length: 57.0
+  name: Crab Walk
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+  - upper body
+- instructions: Start standing. Hop forward into a squat position. Hop backward to
+    standing start. Keep hops controlled.
+  length: 57.0
+  name: Forward/Backward Hop Squats
+  reel_or_short: false
+  source: gemini
+  targeted groups:
+  - lower body
+  - cardio
+  type: compound
+- length: 57.0
+  name: Bicycle # Standard bicycle crunch
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - core
+- length: 57.0
+  name: <x> Heel Taps + Pop Squat # Values from guide
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - upper body
+  - lower body
+  random reps:
+    x:
+      min: 2
+      max: 4
+      multiple: 1
+- length: 57.0
+  name: Extended Plank
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+  - upper body
+  - core
+- length: 57.0
+  name: Side Jacks
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+  - upper body
+  - cardio
+- length: 57.0
+  name: Bear Hold + Reach # Alternating reach
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - upper body
+  - core
+- length: 57.0
+  name: Staggered Squat + Knee Up # Right leg forward
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+- length: 57.0
+  name: Side Pushup # Left Side
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - core
+- length: 57.0
+  name: Single Knee Crunches # Right knee
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - core
+- length: 57.0
+  name: Forward / Back Lunge # Alternate Left Leg: Fwd Lunge, Back Lunge
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+- length: 57.0
+  name: Feet-Elevated Side Plank # Right Side (Use floor if needed)
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - core
+- length: 57.0
+  name: Lunge + Reach # Switch leg halfway
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+  - upper body
+- length: 57.0
+  name: Duck Walk
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+- length: 57.0
+  name: One Arm Plank Hold # Right arm down
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - upper body
+  - core
+- length: 57.0
+  name: Staggered Squat + Knee Up # Left leg forward
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+- length: 57.0
+  name: Side Lying Leg Kicks # Right leg kicks
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - core
+- length: 57.0
+  name: Single Knee Crunches # Left knee
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - core
+- length: 57.0
+  name: Feet-Elevated Side Plank # Left Side (Use floor if needed)
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - core
+- length: 57.0
+  name: One Arm Plank Hold # Left arm down
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - upper body
+  - core
+- length: 57.0
+  name: Side Lying Leg Kicks # Left leg kicks
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - core
+- length: 45.0
+  name: cool down
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - cool down

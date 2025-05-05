@@ -1,0 +1,1231 @@
+- length: 45.0
+  name: warmup
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - warmup
+- instructions: Perform a Squat Jack (jack legs out/in while staying in squat). As
+    legs come IN, throw a cross punch with the right arm. Next jack, punch left. Alternate
+    punches on each closing jack.
+  length: 20.0
+  name: Squat Jack + Cross Punch
+  reel_or_short: false
+  source: gemini
+  targeted groups:
+  - lower body
+  - upper body
+  - core
+  - cardio
+  type: compound
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Pushup / Leg Extension # Pushup then extend opp leg back
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - upper body
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+# Repeat Pair 1 x 3 times (01:50 - 03:50 total block time after first round)
+- instructions: Perform a Squat Jack (jack legs out/in while staying in squat). As
+    legs come IN, throw a cross punch with the right arm. Next jack, punch left. Alternate
+    punches on each closing jack.
+  length: 20.0
+  name: Squat Jack + Cross Punch
+  reel_or_short: false
+  source: gemini
+  targeted groups:
+  - lower body
+  - upper body
+  - core
+  - cardio
+  type: compound
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Pushup / Leg Extension
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - upper body
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- instructions: Perform a Squat Jack (jack legs out/in while staying in squat). As
+    legs come IN, throw a cross punch with the right arm. Next jack, punch left. Alternate
+    punches on each closing jack.
+  length: 20.0
+  name: Squat Jack + Cross Punch
+  reel_or_short: false
+  source: gemini
+  targeted groups:
+  - lower body
+  - upper body
+  - core
+  - cardio
+  type: compound
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Pushup / Leg Extension
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - upper body
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- instructions: Perform a Squat Jack (jack legs out/in while staying in squat). As
+    legs come IN, throw a cross punch with the right arm. Next jack, punch left. Alternate
+    punches on each closing jack.
+  length: 20.0
+  name: Squat Jack + Cross Punch
+  reel_or_short: false
+  source: gemini
+  targeted groups:
+  - lower body
+  - upper body
+  - core
+  - cardio
+  type: compound
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Pushup / Leg Extension
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - upper body
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+# End Pair 1 Block (at 04:00 after warmup)
+- length: 20.0
+  name: Lateral Lunge / Reverse Lunge # Right Leg Focus First (e.g., Lat L R -> Rev L R)
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Knee Drives # Fast alternating knee drives in place
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+  - core
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+# Repeat Pair 2, alternating sides R L R L (05:00 - 07:00 block time)
+- length: 20.0
+  name: Lateral Lunge / Reverse Lunge # Left Leg Focus (Lat L L -> Rev L L)
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Knee Drives
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+  - core
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Lateral Lunge / Reverse Lunge # Right Leg Focus
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Knee Drives
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+  - core
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Lateral Lunge / Reverse Lunge # Left Leg Focus
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Knee Drives
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+  - core
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+# End Pair 2 Block (at 07:10 after warmup)
+- length: 20.0
+  name: Pushup / Beast / Break Dance # One component mainly
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - upper body
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Squat Kicks # Alternate kick side
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+# Repeat Pair 3 x 3 times (08:10 - 10:10 block time)
+- length: 20.0
+  name: Pushup / Beast / Break Dance
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - upper body
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Squat Kicks
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Pushup / Beast / Break Dance
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - upper body
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Squat Kicks
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Pushup / Beast / Break Dance
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - upper body
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Squat Kicks
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+# End Pair 3 Block (at 10:20 after warmup)
+- length: 20.0
+  name: Crab Knee / Toe Taps # Original crab taps
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+  - upper body
+  - core
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Burpee + 2 Star Jumps # Focus on fast transition
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+  - upper body
+  - cardio
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+# Repeat Pair 4 x 3 times (11:20 - 13:20 block time)
+- length: 20.0
+  name: Crab Knee / Toe Taps
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+  - upper body
+  - core
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Burpee + 2 Star Jumps
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+  - upper body
+  - cardio
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Crab Knee / Toe Taps
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+  - upper body
+  - core
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Burpee + 2 Star Jumps
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+  - upper body
+  - cardio
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Crab Knee / Toe Taps
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+  - upper body
+  - core
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Burpee + 2 Star Jumps
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+  - upper body
+  - cardio
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+# End Pair 4 Block (at 13:30 after warmup)
+- instructions: Lie on back, legs extended. Sit up powerfully, driving right knee
+    towards chest and swinging left arm forward (like a sprinter). Lower controlled.
+    Alternate sides with each sit-up.
+  length: 20.0
+  name: Sprinter Sit-up
+  reel_or_short: false
+  source: gemini
+  targeted groups:
+  - core
+  - hip flexors
+  type: compound
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Reverse Lunge + Twist # Alternating Legs
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+  - upper body
+  - cardio
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+# Repeat Pair 5 x 3 times (14:30 - 16:30 block time)
+- instructions: Lie on back, legs extended. Sit up powerfully, driving right knee
+    towards chest and swinging left arm forward (like a sprinter). Lower controlled.
+    Alternate sides with each sit-up.
+  length: 20.0
+  name: Sprinter Sit-up
+  reel_or_short: false
+  source: gemini
+  targeted groups:
+  - core
+  - hip flexors
+  type: compound
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Reverse Lunge + Twist
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+  - upper body
+  - cardio
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- instructions: Lie on back, legs extended. Sit up powerfully, driving right knee
+    towards chest and swinging left arm forward (like a sprinter). Lower controlled.
+    Alternate sides with each sit-up.
+  length: 20.0
+  name: Sprinter Sit-up
+  reel_or_short: false
+  source: gemini
+  targeted groups:
+  - core
+  - hip flexors
+  type: compound
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Reverse Lunge + Twist
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+  - upper body
+  - cardio
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- instructions: Lie on back, legs extended. Sit up powerfully, driving right knee
+    towards chest and swinging left arm forward (like a sprinter). Lower controlled.
+    Alternate sides with each sit-up.
+  length: 20.0
+  name: Sprinter Sit-up
+  reel_or_short: false
+  source: gemini
+  targeted groups:
+  - core
+  - hip flexors
+  type: compound
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Reverse Lunge + Twist
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+  - upper body
+  - cardio
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+# End Pair 5 Block (at 16:40 after warmup)
+- instructions: Start in a high plank. Perform a small plyometric hop with the feet,
+    bringing both knees briefly towards chest mid-air, tapping them lightly together
+    if possible. Land back softly in plank. Focus on explosive core contraction.
+  length: 20.0
+  name: Plyo Plank Knee Taps
+  reel_or_short: false
+  source: gemini
+  targeted groups:
+  - core
+  - cardio
+  - upper body
+  type: compound
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Donkey Kick to Fire Hydrant # Right Leg
+  original name: Donkey Kick + Fire Hydrant
+  reel_or_short: false
+  source: exercises.yaml # Assume variation exists
+  targeted groups:
+  - lower body
+  - core
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+# Repeat Pair 6, switching legs R L R L (17:40 - 19:40 block time)
+- instructions: Start in a high plank. Perform a small plyometric hop with the feet,
+    bringing both knees briefly towards chest mid-air, tapping them lightly together
+    if possible. Land back softly in plank. Focus on explosive core contraction.
+  length: 20.0
+  name: Plyo Plank Knee Taps
+  reel_or_short: false
+  source: gemini
+  targeted groups:
+  - core
+  - cardio
+  - upper body
+  type: compound
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Donkey Kick to Fire Hydrant # Left Leg
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+  - core
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- instructions: Start in a high plank. Perform a small plyometric hop with the feet,
+    bringing both knees briefly towards chest mid-air, tapping them lightly together
+    if possible. Land back softly in plank. Focus on explosive core contraction.
+  length: 20.0
+  name: Plyo Plank Knee Taps
+  reel_or_short: false
+  source: gemini
+  targeted groups:
+  - core
+  - cardio
+  - upper body
+  type: compound
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Donkey Kick to Fire Hydrant # Right Leg
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+  - core
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- instructions: Start in a high plank. Perform a small plyometric hop with the feet,
+    bringing both knees briefly towards chest mid-air, tapping them lightly together
+    if possible. Land back softly in plank. Focus on explosive core contraction.
+  length: 20.0
+  name: Plyo Plank Knee Taps
+  reel_or_short: false
+  source: gemini
+  targeted groups:
+  - core
+  - cardio
+  - upper body
+  type: compound
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Donkey Kick to Fire Hydrant # Left Leg
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+  - core
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+# End Pair 6 Block (at 19:50 after warmup)
+- length: 20.0
+  name: Glute Bridge
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - core
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Walk Out + Diamond Pushup # Or regular pushup
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - upper body
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+# Repeat Pair 7 x 3 times (20:50 - 22:50 block time)
+- length: 20.0
+  name: Glute Bridge
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - core
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Walk Out + Diamond Pushup
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - upper body
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Glute Bridge
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - core
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Walk Out + Diamond Pushup
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - upper body
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Glute Bridge
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - core
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Walk Out + Diamond Pushup
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - upper body
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+# End Pair 7 Block (at 23:00 after warmup)
+- length: 20.0
+  name: Prisoner Lunge # Alternate legs
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Dead Bug # Classic alternating arm/leg lower
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - core
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+# Repeat Pair 8 x 3 times (24:00 - 26:00 block time)
+- length: 20.0
+  name: Prisoner Lunge
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Dead Bug
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - core
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Prisoner Lunge
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Dead Bug
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - core
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Prisoner Lunge
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - lower body
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+- length: 20.0
+  name: Dead Bug
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - core
+- length: 10.0
+  name: rest
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - rest
+# End Pair 8 Block (at 26:40 after warmup)
+- length: 45.0
+  name: cool down
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - cool down

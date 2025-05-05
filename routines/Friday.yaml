@@ -1,0 +1,141 @@
+- length: 45.0
+  name: warmup # Gentle flow to start
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - warmup
+- instructions: Stand or kneel tall. Keep torso still. Slowly circle one arm forward,
+    up towards ear (rotating palm out at top), back behind you (rotating palm forward),
+    and down, using full shoulder range of motion without compensation. Repeat backward.
+    Switch arms.
+  length: 60.0
+  name: Shoulder CARS # Switch arm halfway
+  reel_or_short: false
+  source: gemini
+  targeted groups:
+  - stretch
+  - mobility
+  type: dynamic
+- length: 60.0
+  name: Thoracic Rotation # Quadruped T-spine rotations
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - stretch
+- instructions: Kneel in a lunge position (right foot forward). Tuck pelvis slightly,
+    feel left hip flexor stretch. Reach left arm up, then bend torso to the right,
+    deepening the stretch along the left side and hip. Hold/pulse gently. Switch sides.
+  length: 60.0
+  name: Kneeling Hip Flexor with Side Bend # Switch sides halfway
+  reel_or_short: false
+  source: gemini
+  targeted groups:
+  - stretch
+  - mobility
+  type: dynamic
+- length: 60.0
+  name:世界最高のストレッチ # Translation: World's Best Stretch
+  original name: world's best stretch
+  reel_or_short: false
+  source: exercises.yaml # Renamed example
+  targeted groups:
+  - stretch
+- length: 60.0
+  name: Mermaid # Seated side bend variation, switch sides halfway
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - stretch
+- instructions: Sit with right leg bent, foot near left hip. Cross left leg over right,
+    placing left foot flat on floor outside right knee. Twist torso left, hugging
+    left knee or using right elbow for leverage. Gently flow in/out of twist or hold.
+    Switch sides.
+  length: 60.0
+  name: Seated Pretzel Stretch Flow # Switch sides halfway
+  reel_or_short: false
+  source: gemini
+  targeted groups:
+  - stretch
+  - mobility
+  type: dynamic
+- length: 60.0
+  name: Open Book Chest Stretch # Assume side lying, opening top arm like book
+  original name: Open Book
+  reel_or_short: false
+  source: exercises.yaml # Needs confirmation from yaml contents
+  targeted groups:
+  - stretch
+- instructions: Lie face-up, arms T-shape. Keep shoulders down. Bend right knee, drop
+    it across body towards left side floor. Left hand can gently guide knee. Look
+    towards right hand. Hold/switch sides.
+  length: 60.0
+  name: Iron Cross (Supine Twist Variation) # Switch sides halfway
+  reel_or_short: false
+  source: gemini
+  targeted groups:
+  - stretch
+  - mobility
+  type: dynamic
+- length: 60.0
+  name: Happy Baby / Straddle # Option between the two poses
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - stretch
+- instructions: Stand tall. Step forward slightly with right heel, toes up, leg straight.
+    Hinge at hips, reaching hands down towards right foot ("scoop"), feeling hamstring
+    stretch. Step through, repeat with left leg. Walk forward alternating legs.
+  length: 60.0
+  name: Hamstring Scoops (Walking)
+  reel_or_short: false
+  source: gemini
+  targeted groups:
+  - stretch
+  - mobility
+  type: dynamic
+- length: 60.0
+  name: Forearm # Stretch for wrists/forearms
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - stretch
+- length: 60.0
+  name: Bottom of foot # Stretch using hand or ball
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - stretch
+- length: 60.0
+  name: Outer Hips Pretzel # Lying pretzel stretch, switch halfway
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - stretch
+- length: 60.0
+  name: Cobra + Tuck + Twist # Flowing core/stretch combo
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - core # Also involves stretch/mobility
+- length: 60.0
+  name: Deep Squat # Hold or rock gently
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - stretch
+- length: 45.0
+  name: cool down # Final moments of stillness/breathing
+  position: all
+  reel_or_short: false
+  source: exercises.yaml
+  targeted groups:
+  - full body
+  targeted_muscles:
+  - all
+  type:
+  - cool down

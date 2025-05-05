@@ -1,0 +1,25 @@
+[Unit]
+Description=Gunicorn instance to serve the Workout Timer application
+After=network.target
+
+[Service]
+# Recommended dedicated user/group
+User=workoutapp
+Group=workoutapp
+
+# Set the working directory to the project root
+WorkingDirectory=/srv/workout-timer # <-- Replace if your path differs
+
+# Command to execute Gunicorn
+ExecStart=/srv/workout-timer/venv/bin/gunicorn -c /srv/workout-timer/gunicorn.conf.py app:app # <-- Replace path if differs
+
+# Restart policy
+Restart=on-failure
+RestartSec=5s
+
+# Output configuration (recommended for systemd/journald)
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
