@@ -10,6 +10,8 @@ Group=workoutapp
 # Set the working directory to the project root
 WorkingDirectory=/srv/workout-timer
 
+Environment="FLASK_APP_ROOT=/workout-timer"
+
 # Command to execute Gunicorn
 ExecStart=/srv/workout-timer/venv/bin/gunicorn -c /srv/workout-timer/gunicorn.conf.py app:app
 
