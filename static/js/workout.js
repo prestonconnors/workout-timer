@@ -312,9 +312,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Initialization ---
     async function init() {
          try {
-            // Use the base URL passed from the template
-            const apiUrl = `${routineApiUrlBase}${routineFilename}`;
-            const response = await fetch(apiUrl);
             // Basic Browser Feature Checks
              if (!('speechSynthesis' in window)) {
                 console.warn("Speech Synthesis not supported in this browser.");

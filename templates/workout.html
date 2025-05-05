@@ -53,12 +53,6 @@
         // Use const for variables that shouldn't be reassigned
         const routineFilename = "{{ routine_filename }}";
     </script>
-    <script>
-    const routineFilename = "{{ routine_filename }}";
-    // Construct the API URL using url_for which now respects APPLICATION_ROOT
-    const routineApiUrlBase = "{{ url_for('get_routine_data', filename='PLACEHOLDER') }}".replace('PLACEHOLDER', '');
-    // This will generate something like "/workout-timer/routine/"
-    </script>
     <script src="{{ url_for('static', filename='js/workout.js') }}"></script>
 </body>
 </html>

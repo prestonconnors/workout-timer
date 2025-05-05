@@ -19,14 +19,6 @@ app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['MAX_CONTENT_LENGTH'] = 1 * 1024 * 1024  # 1 MB max upload size
 
-# --- Set Application Root from Environment Variable ---
-app_root = os.environ.get('FLASK_APP_ROOT', '/')
-if app_root != '/': # Avoid trailing slash issues if root is just '/'
-    app_root = app_root.rstrip('/')
-# Using APPLICATION_ROOT directly is simpler if url_for generation is the main goal
-app.config['APPLICATION_ROOT'] = app_root
-# ----------------------------------------------------
-
 # Ensure routines directory exists on startup
 try:
     os.makedirs(ROUTINES_DIR, exist_ok=True)
