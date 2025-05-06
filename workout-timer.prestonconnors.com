@@ -20,8 +20,8 @@ server { # HTTPS main server
     server_name workout-timer.prestonconnors.com;
 
     # --- SSL Configuration ---
-    ssl_certificate /etc/letsencrypt/live/workout-timer.prestonconnors.com/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/workout-timer.prestonconnors.com/privkey.pem;
+    ssl_certificate /etc/letsencrypt/live/prestonconnors.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/prestonconnors.com/privkey.pem;
     include /etc/letsencrypt/options-ssl-nginx.conf;
     ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
     # ------------------------
