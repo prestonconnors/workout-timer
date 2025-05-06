@@ -2,56 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <!-- Prevent pinch zoom, essential for app-like feel -->
-    <title>Workout Timer</title>
-    <!-- Consider hosting Font Awesome locally or using SVGs for full offline/production use -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Workout In Progress - AI Workout Timer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <!-- Add favicon links here -->
-    <!-- <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}"> -->
-    <!-- <link rel="apple-touch-icon" href="{{ url_for('static', filename='apple-touch-icon.png') }}"> -->
-    <!-- <meta name="theme-color" content="#E65100"> <!-- Theme color for browser UI -->
+    <!-- Favicon and Theme Color -->
+    <style>
+        #autoplay-prompt {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background-color: rgba(0, 0, 0, 0.75); color: white;
+            display: flex; /* Changed from none, JS will handle visibility */
+            flex-direction: column; justify-content: center; align-items: center;
+            text-align: center; font-size: clamp(1.5em, 5vmin, 2em);
+            cursor: pointer; z-index: 1000; padding: 20px;
+            opacity: 0; visibility: hidden; /* Start hidden */
+            transition: opacity 0.3s ease, visibility 0s linear 0.3s; /* Hide after fade */
+        }
+        #autoplay-prompt.visible {
+            opacity: 1; visibility: visible;
+            transition: opacity 0.3s ease, visibility 0s linear 0s; /* Show immediately, fade in */
+        }
+        #autoplay-prompt p { margin-bottom: 25px; font-weight: 300; }
+        #autoplay-prompt button { padding: clamp(12px,4vmin,18px) clamp(25px,8vmin,35px); font-size:clamp(1em,4vmin,1.3em); background-color:#198754; border:none; border-radius:8px; color:white; cursor:pointer; transition:background-color .2s ease; font-weight:600; box-shadow:0 2px 5px rgba(0,0,0,.2); }
+        #autoplay-prompt button:hover { background-color:#157347; }
+    </style>
 </head>
 <body>
     <noscript>
-        <p style="padding: 20px; text-align: center; font-size: 1.2em; color: red;">
-            This application requires JavaScript to function. Please enable JavaScript in your browser settings.
+        <p style="padding: 20px; text-align: center; font-size: 1.2em; color: red; background-color: #ffebee; border: 1px solid red;">
+            This application requires JavaScript to function. Please enable JavaScript in your browser.
         </p>
     </noscript>
 
-    <audio id="countdown-sound" src="{{ url_for('static', filename='audio/countdown_timer.mp3') }}" preload="auto"></audio>
+    <!-- Tap to Begin Prompt Div -->
+    <div id="autoplay-prompt">
+        <p>Ready to start your workout?</p>
+        <button id="begin-workout-button">Tap to Begin!</button>
+    </div>
 
-    <div id="timer-container">
-        <div id="total-time-section">
-            REMAINING: <span id="total-time">--:--</span>
-        </div>
+    <audio id="countdown-sound" src="{{ url_for('static', filename='audio/countdown_timer.mp3') }}" preload="auto" aria-hidden="true"></audio>
 
+    <div id="timer-container" role="main" aria-live="polite">
+        <!-- Timer container content -->
+        <div id="total-time-section">REMAINING: <span id="total-time">--:--</span></div>
         <div id="exercise-name-section">
-             <h1 id="exercise-name">Loading Routine...</h1>
-             <p id="next-exercise">Next: --</p>
+             <h1 id="exercise-name" aria-atomic="true">Loading...</h1>
+             <p id="next-exercise" aria-atomic="true">Next: --</p>
         </div>
-
-        <div id="current-timer-section">
-             <div id="current-timer">--</div>
-        </div>
-
-        <div class="controls">
-            <button id="prev-btn" aria-label="Previous Exercise" title="Previous Exercise"><i class="fas fa-backward-step" aria-hidden="true"></i></button>
-            <button id="play-pause-btn" aria-label="Play/Pause" title="Play/Pause"><i class="fas fa-play" aria-hidden="true"></i></button>
-            <button id="next-btn" aria-label="Next Exercise" title="Next Exercise"><i class="fas fa-forward-step" aria-hidden="true"></i></button>
+        <div id="current-timer-section"><div id="current-timer" aria-atomic="true">--</div></div>
+        <div class="controls" role="toolbar" aria-label="Workout Controls">
+            <button id="prev-btn" aria-label="Prev"><i class="fas fa-backward-step"></i></button>
+            <button id="play-pause-btn" aria-label="Play"><i class="fas fa-play"></i></button>
+            <button id="next-btn" aria-label="Next"><i class="fas fa-forward-step"></i></button>
         </div>
     </div>
 
-    <div id="finished-screen" style="display: none;">
+    <div id="finished-screen" style="display: none;" role="alert">
         <h1>Workout Complete!</h1>
         <a href="{{ url_for('index') }}" class="button-link">Back to Routines</a>
     </div>
 
-    <!-- Pass filename to JavaScript -->
     <script>
-        // Use const for variables that shouldn't be reassigned
+        // Pass values to JS (autoplay removed)
         const routineFilename = "{{ routine_filename }}";
+        const introDuration = parseInt("{{ intro_duration }}", 10);
+        const outroDuration = parseInt("{{ outro_duration }}", 10);
+        const routineApiUrlBase = "{{ url_for('get_routine_data', filename='placeholder') | replace('placeholder', '') }}";
     </script>
     <script src="{{ url_for('static', filename='js/workout.js') }}"></script>
 </body>

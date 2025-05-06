@@ -20,3 +20,5 @@ Thumbs.db
 
 # Dependencies (typically handled by requirements.txt)
 # instance/ # If using Flask instance folders
+
+routines/
